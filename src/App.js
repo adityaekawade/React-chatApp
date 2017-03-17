@@ -57,7 +57,8 @@ class App extends React.Component {
                         <br/>
                         <div id="disp1"  style={{"overflow-y" : "scroll"}} >
                           <br/>
-                          {this.state.messages && this.state.messages.map((message,idx)=>                                                                   <div className={message.id=="1"? "speechStyle me" : "speechStyle1 you"}   
+                          {this.state.messages && this.state.messages.map((message,idx)=>                                                                   
+			   <div className={message.id=="1"? "speechStyle me" : "speechStyle1 you"}   
                                   key={idx} > 
                                     {message.onlineStatus}  {message.message}
                                </div>)}
